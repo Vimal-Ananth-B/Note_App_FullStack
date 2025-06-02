@@ -1,0 +1,99 @@
+/* NoteApp.css */
+
+/* Global style */
+/* body {
+  background: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+body {
+  background: linear-gradient(to bottom, #3883b8 0%, #ffffff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  max-width: 100%;
+}
+
+
+/* Container for the app */
+.container {
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Note card */
+.card {
+  border: none;
+  border-left: 6px solid #0d6efd;
+  transition: transform 0.2s ease-in-out;
+  background-color: #fefefe;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Title */
+.card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Buttons */
+.btn {
+  font-weight: 500;
+  padding: 6px 14px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Form inputs */
+input.form-control,
+textarea.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+/* Textarea resizing */
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
